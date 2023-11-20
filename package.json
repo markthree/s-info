@@ -43,6 +43,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.18.10",
+    "bumpp": "^9.2.0",
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
     "vitest": "^0.34.6"
