@@ -5,6 +5,7 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "bin": "./dist/cli.cjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/markthree/s-info.git"
@@ -22,6 +23,7 @@
   "scripts": {
     "test": "vitest",
     "build": "unbuild",
+    "stub": "unbuild --stub",
     "prepublishOnly": "pnpm build",
     "release": "bumpp --commit --push --tag && npm publish"
   },
@@ -47,5 +49,9 @@
     "typescript": "^5.2.2",
     "unbuild": "^2.0.0",
     "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "consola": "^3.2.3",
+    "kolorist": "^1.8.0"
   }
 }
